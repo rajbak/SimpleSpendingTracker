@@ -79,9 +79,12 @@
 		242133C41FBEA86E00204969 /* SimpleSpendingTracker */ = {
 			isa = PBXGroup;
 			children = (
+				242133EB1FC48CA600204969 /* Stores */,
+				242133EA1FC48C9D00204969 /* Helpers */,
+				242133E91FC48C9500204969 /* Controllers */,
+				242133E81FC48C8E00204969 /* Views */,
+				242133E71FC48C8400204969 /* Models */,
 				242133C51FBEA86E00204969 /* AppDelegate.swift */,
-				242133C71FBEA86E00204969 /* FirstViewController.swift */,
-				242133C91FBEA86E00204969 /* SecondViewController.swift */,
 				242133CB1FBEA86E00204969 /* Main.storyboard */,
 				242133CE1FBEA86E00204969 /* Assets.xcassets */,
 				242133D01FBEA86E00204969 /* LaunchScreen.storyboard */,
@@ -97,6 +100,43 @@
 				242133DE1FBEA86F00204969 /* Info.plist */,
 			);
 			path = SimpleSpendingTrackerTests;
+			sourceTree = "<group>";
+		};
+		242133E71FC48C8400204969 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		242133E81FC48C8E00204969 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		242133E91FC48C9500204969 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				242133C71FBEA86E00204969 /* FirstViewController.swift */,
+				242133C91FBEA86E00204969 /* SecondViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		242133EA1FC48C9D00204969 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		242133EB1FC48CA600204969 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stores;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
