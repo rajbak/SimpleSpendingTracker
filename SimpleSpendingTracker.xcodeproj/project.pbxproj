@@ -14,6 +14,8 @@
 		242133CF1FBEA86E00204969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242133CE1FBEA86E00204969 /* Assets.xcassets */; };
 		242133D21FBEA86E00204969 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242133D01FBEA86E00204969 /* LaunchScreen.storyboard */; };
 		242133DD1FBEA86F00204969 /* SimpleSpendingTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242133DC1FBEA86F00204969 /* SimpleSpendingTrackerTests.swift */; };
+		242133ED1FC9DA5B00204969 /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242133EC1FC9DA5B00204969 /* StringHelper.swift */; };
+		242133F01FC9E0CE00204969 /* StringHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242133EF1FC9E0CE00204969 /* StringHelperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		242133D81FBEA86F00204969 /* SimpleSpendingTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleSpendingTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		242133DC1FBEA86F00204969 /* SimpleSpendingTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSpendingTrackerTests.swift; sourceTree = "<group>"; };
 		242133DE1FBEA86F00204969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		242133EC1FC9DA5B00204969 /* StringHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelper.swift; sourceTree = "<group>"; };
+		242133EF1FC9E0CE00204969 /* StringHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 		242133DB1FBEA86F00204969 /* SimpleSpendingTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
+				242133EE1FC9E07300204969 /* HelpersTests */,
 				242133DC1FBEA86F00204969 /* SimpleSpendingTrackerTests.swift */,
 				242133DE1FBEA86F00204969 /* Info.plist */,
 			);
@@ -128,6 +133,7 @@
 		242133EA1FC48C9D00204969 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				242133EC1FC9DA5B00204969 /* StringHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -137,6 +143,14 @@
 			children = (
 			);
 			path = Stores;
+			sourceTree = "<group>";
+		};
+		242133EE1FC9E07300204969 /* HelpersTests */ = {
+			isa = PBXGroup;
+			children = (
+				242133EF1FC9E0CE00204969 /* StringHelperTests.swift */,
+			);
+			path = HelpersTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242133ED1FC9DA5B00204969 /* StringHelper.swift in Sources */,
 				242133CA1FBEA86E00204969 /* SecondViewController.swift in Sources */,
 				242133C61FBEA86E00204969 /* AppDelegate.swift in Sources */,
 				242133C81FBEA86E00204969 /* FirstViewController.swift in Sources */,
@@ -252,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242133F01FC9E0CE00204969 /* StringHelperTests.swift in Sources */,
 				242133DD1FBEA86F00204969 /* SimpleSpendingTrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
