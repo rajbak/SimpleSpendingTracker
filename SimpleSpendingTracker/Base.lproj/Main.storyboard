@@ -24,9 +24,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="olc-xF-fPo">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="olc-xF-fPo">
                                 <rect key="frame" x="16" y="119" width="343" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -45,9 +44,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="olc-xF-fPo" firstAttribute="top" secondItem="Axs-bD-2Kq" secondAttribute="bottom" constant="8" id="4nI-44-iOO"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="olc-xF-fPo" secondAttribute="trailing" constant="16" id="CV1-8F-Qh5"/>
                             <constraint firstItem="Axs-bD-2Kq" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="KrZ-PP-ucH"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="28e-ZL-5iy" secondAttribute="trailing" constant="26" id="LLy-cl-Nsx"/>
                             <constraint firstItem="28e-ZL-5iy" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="46" id="TQ1-Tn-f35"/>
+                            <constraint firstItem="olc-xF-fPo" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="lWk-NH-YFO"/>
                             <constraint firstItem="Axs-bD-2Kq" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="44" id="sGb-qa-ccC"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="Axs-bD-2Kq" secondAttribute="trailing" constant="16" id="zS5-9m-iv7"/>
                         </constraints>
@@ -56,6 +58,7 @@
                     <tabBarItem key="tabBarItem" title="Add" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="amountTextField" destination="Axs-bD-2Kq" id="1mu-3v-NQO"/>
+                        <outlet property="dateTextField" destination="olc-xF-fPo" id="qpe-jR-kcF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
