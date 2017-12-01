@@ -12,12 +12,18 @@ import XCTest
 class DateExtensionsTests: XCTestCase {
     
     func test_toDateString_WhenDateHasTime_ReturnsDataStringOnly() {
+        // arrange
+        let now = Date()
+        let style = DateFormatter.Style.short
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy/MM/dd HH:mm"
-        let dateTime = formatter.date(from: "2017/10/08 22:31")
+        formatter.dateStyle = style
+        formatter.timeStyle = .none
+        let expectedDate = formatter.string(from: now)
         
-        let dateString = dateTime?.toDateString(style: .short)
-        
-        XCTAssertEqual("08/10/2017", dateString)
+        // act
+        let dateString = now.toDateString(style: style)
+
+        // assert
+        XCTAssertEqual(expectedDate, dateString)
     }
 }
